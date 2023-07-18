@@ -1,0 +1,54 @@
+.side_title{
+	font-size: 24px;
+	margin-block-start: 0px;
+	padding-top: 0.83em;
+}
+.right_menu{
+	border-left: solid 1px var(--hover_color1);
+}
+.right_content{
+	position: sticky;
+	top: var(--top);
+}
+.right_search_form{
+	display: flex;
+}
+.searchbar{
+	padding: 10px;
+	color: var(--font_color1);
+	background-color: var(--hover_right);
+	font-size: 18px;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 9999px;
+	padding: 12px;
+}
+.searchbar:focus{
+	outline: solid 2px;
+	outline-color: var(--hover_color2);
+}
+.search_submit{
+	display: none;
+}
+.jinkou{
+	font-size: 18px;
+	width: 100%;
+}
+.jinkou>tbody{
+	width: 100%;
+}
+.j_one{
+	border-right: solid 1px var(--hover_color1);
+	padding-right: 16px;
+	width: 60%;
+}
+.j_two{
+	padding-left: 16px;
+	font-weight: bold;
+	width: 40%;
+}
+.client_info{
+	font-size: 32px;
+	font-weight: bold;
+}

@@ -1,0 +1,15 @@
+#contextmenu{
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 100px;
+	border: 1px solid var(--hover_color1);
+	background-color: var(--background2);
+	color: var(--font_color1);
+	z-index: 15;
+}
+#contextmenu li{
+	cursor: pointer;
+}

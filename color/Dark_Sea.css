@@ -1,0 +1,21 @@
+/* CSSの設定 */
+/* /settings.phpでCSS以外は設定できるよ */
+@charset "UTF-8";
+:root{
+	--main_font: 'Zen Maru Gothic';	/*フォント*/
+	--input_color: #333399;			/*インプットボックスのアクティブ色、デフォルト#333399*/
+	--accent_color1: #333355;		/*アクセントカラー、デフォルト#eeffff*/
+	--hover_color1: #666666;		/*ホバーカラー、デフォルト#f0f0f0*/
+	--background1: #33334a;			/*外側の背景色、デフォルト#f5ffff*/
+	--ham_color: #292977;			/*ハンバーガーの色、デフォルト#77bbbb*/
+	--ham_bg_color: #000044;		/*ハンバーガーの背景色、デフォルト#d9f4f4*/
+	--font_color1: #eeeeee;			/*文字色（ダークモードのみ）*/
+	--background2: #16162e;			/*背景色2（ダークモードのみ）*/
+	--hover_color2: #666666;		/*ホバー色（ダークモードのみ）*/
+	--hover_color_text: #eeeeee;	/*ホバー時の文字色（ダークモードのみ）*/
+	--hover_right: #555575;			/*アカウントリストのホバー（ダークモードのみ）*/
+	--background_header: #555575;	/*ヘッダーの背景色*/
+	--profile_bgcolor: rgba(10,10,50,0.6);	/*プロフィール画面の背景色*/
+	--post_bgcolor: rgba(255,255,255,0.2);	/*ポスト画面の背景色*/
+	--tag_filter: brightness(3); /*ハイライトテキストの明るさ*/
+}

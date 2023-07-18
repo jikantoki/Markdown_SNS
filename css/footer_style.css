@@ -1,0 +1,73 @@
+footer{
+	margin-top:auto;
+	width: 100%;
+}
+.footer_body{
+	width: 100%;
+	background-color:#333333;
+	color:white;
+}
+.footer_main{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.footer_body_child{
+	box-sizing:border-box;
+	width: 60%;
+	min-width: 640px;
+	padding: 10px;
+}
+.footer_body_p{
+}
+.footer_links{
+	color:white;
+}
+.footer_left, .footer_right{
+	width: 20%;
+	min-width: 450px;
+	padding: 10px;
+}
+.mobile_under_box{
+	display: table;
+	width: 100%;
+}
+.mobile_under_box>a{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.under_a>div>img, .under_a>div>svg{
+	vertical-align: middle;
+	width: 35px;
+	height: 35px;
+}
+.under_myaccount{
+	border-radius: 50%;
+}
+.under_a{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mobile_under_button{
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	background-color: var(--background2);
+	border-top: solid 1px var(--hover_right);
+	z-index: 12;
+	transition: all .2s;
+}
+.under_myaccount_round{
+	border: solid 3px;
+	width: 29px!important;
+	height: 29px!important;
+}
+.under_active{
+	background-color: var(--hover_color2);
+	color: var(--hover_color_text);
+	transition: all .2s;
+}

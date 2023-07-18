@@ -1,0 +1,76 @@
+{
+  "background_color": "#000000",
+  "description": "マークダウンで簡潔に喋れるSNS",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "MDSNS",
+  "scope": "/",
+  "short_name": "MDSNS",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "id": "/",
+  "categories": [
+    "social"
+  ],
+  "screenshots": [
+    {
+      "src": "/img/screenshot01.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/screenshot02.png",
+      "sizes": "800x1710",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+    {
+    	"src": "/img/favicon96.png",
+    	"type": "image/png",
+    	"sizes": "96x96"
+    },
+    {
+    	"src": "/img/favicon512.png",
+    	"type": "image/png",
+    	"sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "トップ",
+      "short_name": "トップ",
+      "description": "始まりはここから",
+      "url": "/",
+      "icons": [{ "src": "/img/home96.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "ワールド",
+      "short_name": "ワールド",
+      "description": "世界の投稿を見る",
+      "url": "/world",
+      "icons": [{ "src": "/img/world96.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "メッセージ",
+      "short_name": "メッセージ",
+      "description": "ダイレクトメッセージを開く",
+      "url": "/dm",
+      "icons": [{ "src": "/img/dm96.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "ポスト",
+      "short_name": "ポスト",
+      "description": "全世界に呟く",
+      "url": "/post",
+      "icons": [{ "src": "/img/post_small96.svg", "sizes": "96x96" }]
+    }
+  ],
+  "protocol_handlers": [
+  	{
+  		"protocol": "web+jikantoki",
+  		"url": "/"
+  	}
+  ],
+  "lang": "ja"
+}

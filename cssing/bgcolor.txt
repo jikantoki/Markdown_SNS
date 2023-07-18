@@ -1,0 +1,1 @@
+<span style="background-color: var(--hover_color2);color:white;">

@@ -1,0 +1,6 @@
+/* lightbox用 */
+.lightbox{
+	position: fixed;
+	height: 100vw;
+	top: 0!important;
+}

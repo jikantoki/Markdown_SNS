@@ -1,0 +1,6 @@
+@media (display-mode: standalone){
+	/* ここにPWA環境下でのみ実行する設定を記述 */
+	#installButton{
+		display: none;
+	}
+}

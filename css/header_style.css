@@ -1,0 +1,267 @@
+.fixed{
+	position: fixed;
+	width: 100%;
+	background-color: var(--background2);
+	z-index: 5;
+	top: 0;
+}
+.header_mother{
+	margin: 0 auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.top_mother{
+	width: 20%;
+	min-width: 450px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+.top_button {
+	text-decoration: none;
+	font-size: 32px;
+	border-bottom: 1px solid;
+	color: var(--font_color1);
+	transition: all 0.3s;
+	letter-spacing: 0em;
+}
+.top_button:hover{
+	letter-spacing: 0.2em;
+}
+.top_nav {
+	width: 60%;
+	min-width:640px;
+	padding: 10px 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.top_account {
+	width: 20%;
+	min-width: 450px;
+	padding: 10px;
+}
+.ul_profile_text{
+	display: flex;
+	flex-flow: column;
+	margin-left: 10px;
+}
+.header_profile{
+	display: flex;
+	align-items: center;
+}
+.top_nav_ul{
+	display: table;
+	table-leyout: fixed;
+	padding-inline-start: 0px;
+	list-style-type: none;
+	list-style:none;
+	text-align: right;
+}
+.top_nav_button{
+	display: table-cell;
+}
+.ul_in{
+	text-decoration: none;
+	font-size:16px;
+	border: 1px solid;
+	border-radius: 16px;
+	margin: 5px;
+	padding: 10px;
+	color: var(--font_color1);
+	transition: all 0.3s;
+}
+.ul_in:hover{
+	background-color: var(--hover_color2)!important;
+	color:white;
+}
+.ul_profile{
+	text-decoration: none;
+	font-size: 24px;
+	color: var(--font_color1);
+	transition: all 0.3s;
+}
+.ul_profile_id{
+	margin-top: -6px;
+	text-decoration: none;
+	font-size: 16px;
+	color: var(--font_color1);
+	transition: all 0.3s;
+}
+.ul_profile:hover, .ul_profile_id:hover{
+	text-decoration: underline;
+}
+.top_profile_img{
+	width:64px;
+	height:64px;
+	border-radius: 50%;
+	border-color: #333333;
+	margin: 0 8px;
+	margin-right: 12px;
+	object-fit: cover;
+}
+.logout_button{
+	display: table;
+	text-align: center;
+	padding: 10px;
+}
+.logout_a{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: solid 1px;
+	color: var(--color);
+	transition: all 0.3s;
+	background-color: var(--hover_right);
+}
+.logout_a:hover{
+	background-color: var(--color);
+	color: white;
+}
+.searchbar{
+	width: 24em;
+}
+.menu-btn {
+    /*position: fixed;
+    top: 10px;
+    right: 10px; */
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: var(--hover_color2);
+    cursor: pointer;
+    transition: all .2s;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: white;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+#menu-byn-check, menu-btn span{
+	trandition: 0.3s;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: black;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px var(--font_color1);
+    list-style: none;
+}
+.menu-content ul li a.ham {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: var(--font_color1);
+    text-decoration: none;
+    padding: 16px 15px 16px 10px;
+    position: relative;
+    transition: 0.3s;
+}
+a.ham:hover{
+	background-color: var(--hover_color2);
+	color: var(--hover_color_text)!important;
+}
+a.ham:hover:before{
+	color: var(--hover_color_text)!important;
+}
+.menu-content ul li a.ham::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px var(--font_color1);
+    border-right: solid 2px var(--font_color1);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 22px;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: var(--background1);
+    transition: all 0.3s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+.hamburger-menu{
+	display: none;
+}
+.header_after{
+	height: 0px;
+}
+.ham_post{
+	background-color: var(--accent_color1);
+	color: var(--font_color1);
+}
+.ham_post:hover{
+	background-color: var(--hover_color2);
+	color: var(--hover_color_text);
+}
+.ham_cache{
+	cursor: pointer;
+}
+.toast{
+	display: none;
+	background-color: var(--hover_color2);
+	position: fixed;
+	z-index: 9999;
+	user-select: none;
+	font-size: 20px;
+	padding: 4px 16px;
+	border-radius: 9999px;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	white-space: nowrap;
+	max-width: 90vw;
+	overflow: hidden;
+	color: white;
+}

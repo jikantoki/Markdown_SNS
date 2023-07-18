@@ -1,0 +1,35 @@
+/* CSSの設定 */
+/* /settings.phpでCSS以外は設定できるよ */
+:root{
+	/* 標準テーマカラーの設定（多分もうここから参照されてないきっと多分恐らく） */
+	--main_font: 'Zen Maru Gothic';	/*フォント*/
+	--input_color: #333399;			/*インプットボックスのアクティブ色*/
+	--accent_color1: #eeffff;		/*アクセントカラー*/
+	--hover_color1: #f0f0f0;		/*ホバーカラー*/
+	--background1: #f5ffff;			/*背景色*/
+	--background2: #ffffff;			/*背景色2*/
+	--ham_color: #77bbbb;			/*ハンバーガーの色*/
+	--ham_bg_color: #d9f4f4;		/*ハンバーガーの背景色*/
+	--hover_color2: #66bbbb;		/*ボタンホバーカラー*/
+	--hover_color_text: #ffffff;	/*ホバー時の文字色*/
+	--hover_right: #f3f3f3;			/*アカウントリストのホバー*/
+	--background_header: #ffffff;	/*ヘッダーの背景色*/
+	--font_color1: #000000;			/*文字色*/
+	--profile_bgcolor: rgba(255,255,255,0.8);	/*プロフィール画面の背景色*/
+	--top: 0px; /* 変更しないでください */
+	
+	/* 反応ボタンの色 */
+	--post_hannou_reply: #55BBFF;
+	--post_hannou_good: #F91880;
+	--post_hannou_bad: #777777;
+	--post_hannou_seyana: #5aabd4;
+	--post_hannou_repost: #00BA7C;
+	--post_hannou_shere: #FFCC88;
+	--post_hannou_reply_bg: rgba(50,170,255,0.2);
+	--post_hannou_good_bg: rgba(249,24,128,0.2);
+	--post_hannou_repost_bg: rgba(0,186,128,0.2);
+	--post_hannou_bad_bg: rgba(128,128,128,0.2);
+	--post_hannou_seyana_bg: rgba(24,175,225,0.2);
+	--post_hannou_repost_bg: rgba(0,186,124,0.2);
+	--post_hannou_shere_bg: rgba(255,190,128,0.2);
+}

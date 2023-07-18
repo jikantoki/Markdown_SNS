@@ -1,0 +1,26 @@
+#suggest, #suggest_left {
+    position: absolute;
+    border: none;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 3;
+}
+#suggest div, #suggest_left div {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--font_color1);
+    background-color: var(--background1);
+    font-size: 18px;
+    padding: 8px;
+    user-select: none;
+}
+#suggest div:hover, #suggest_left div:hover{ /* マウスオーバ時のスタイル */
+    background-color: var(--hover_right);
+}
+#suggest div.select, #suggest_left div.select{ /* キー上下で選択した場合のスタイル */
+    background-color: var(--hover_color2);
+    font-weight: bold;
+}
