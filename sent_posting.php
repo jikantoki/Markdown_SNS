@@ -227,7 +227,7 @@
 		}
 	}
 	
-	$sql = "insert into sent_list (sent_rand_id,sent_owner,sent_subowner,sent_message,sent_time,sent_genre,sent_sankou_link1,sent_sankou_link2,sent_img_url1,sent_img_url2,sent_img_url3,sent_img_url4,inyou,reply,place) values ('".$sent_rand_id."','".$data_me['rand_id']."','".$_POST['subowner'][0]."','".$val."',".time().",'".$_POST['genre'][0]."','".$link1."','".$link2."','".$imgData[0]."','".$imgData[1]."','".$imgData[2]."','".$imgData[3]."','".$_POST['inyou'][0]."','".$_POST['reply'][0]."','".$_POST['place'][0]."')";
+	$sql = "insert into sent_list (sent_rand_id,sent_owner,sent_subowner,sent_message,sent_time,sent_genre,sent_sankou_link1,sent_sankou_link2,sent_img_url1,sent_img_url2,sent_img_url3,sent_img_url4,inyou,reply,place,ipAddress) values ('".$sent_rand_id."','".$data_me['rand_id']."','".$_POST['subowner'][0]."','".$val."',".time().",'".$_POST['genre'][0]."','".$link1."','".$link2."','".$imgData[0]."','".$imgData[1]."','".$imgData[2]."','".$imgData[3]."','".$_POST['inyou'][0]."','".$_POST['reply'][0]."','".$_POST['place'][0]."','".$_SERVER['REMOTE_ADDR']."');";
 	$q = $pdo -> query($sql);
 	$history_post = $q -> fetchAll(PDO::FETCH_BOTH);
 	$reply_sonzai = false;
