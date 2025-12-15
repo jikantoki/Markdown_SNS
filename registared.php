@@ -60,9 +60,10 @@
 
 	if($passerr == 0){
 	//    $count = $db->exec('INSERT INTO users_list (id,name,icon_url,twitter_id,pass) VALUES (:id,:name,:icon_url,:twitter_id,:pass)');
-	    $sql = "INSERT INTO users_list (mail,mail_open,id,name,icon_url,twitter_id,pass,status,rand_id,unixtime) VALUES (:mail,:mail_open,:id,:name,:icon_url,:twitter_id,:passed,0,:rand_id,:unixtime)";
+	    $sql = "INSERT INTO users_list (mail,mail_open,id,name,icon_url,twitter_id,pass,status,rand_id,unixtime,ipAddress) VALUES (:mail,:mail_open,:id,:name,:icon_url,:twitter_id,:passed,0,:rand_id,:unixtime,:ipAddress)";
 	    $stmt = $pdo->prepare($sql); //挿入する値は空のまま、SQL実行の準備をする
-	    $params = array(':mail' => $mail,':mail_open' => $mail_open2,':id' => $id, ':name' => $name, ':icon_url' => $icon_url, ':twitter_id' => $twitter_id, ':passed' => $passed, ':rand_id' => $rand_id,':unixtime' => $unixtime); // 挿入する値を配列に格納する
+	    $params = array(':mail' => $mail,':mail_open' => $mail_open2,':id' => $id, ':name' => $name, ':icon_url' => $icon_url, ':twitter_id' => $twitter_id, ':passed' => $passed, ':rand_id' => $rand_id,':unixtime' => $unixtime, 'ipaddress' => $_SERVER['REMOTE_ADDR']
+		); // 挿入する値を配列に格納する
 	    $stmt->execute($params); //挿入する値が入った変数をexecuteにセットしてSQLを実行
 	}
 	
