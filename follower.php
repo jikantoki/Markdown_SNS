@@ -145,6 +145,9 @@
 //								echo"</pre>";
 							}
 //							var_dump($data);
+							if(!isset($data['id'])){
+								continue;
+							}
 							$displayname = strcut($data['id'],36);
 							if(strcmp($data['name'],"") != 0){
 								$displayname = strcut($data['name'],36);
