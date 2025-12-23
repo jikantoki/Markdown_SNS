@@ -37,7 +37,7 @@
 		$ret = array('word' => 'ログインエラー','status' => 'err');
 		$er = 1;
 	}else{
-		$q = "select count(*) from sent_list where sent_owner='".$data_me['rand_id']."'";
+		$q = "select count(*) from users_list where rand_id='".$data_me['rand_id']."'";
 		$q2 = $pdo ->query($q);
 		$q3 = $q2 -> fetchAll(PDO::FETCH_BOTH);
 		$qc = $q3[0][0];
